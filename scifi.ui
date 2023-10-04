@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="rec.qrc">:/redc/lib/tuse.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>160</y>
+     <width>821</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_4 {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+#label_4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#label_4::before {
+  content: &quot;&quot;;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: circle-rotate 2s linear infinite;
+}
+
+@keyframes circle-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="rec.qrc">:/redc/lib/gifloader.gif</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitB">
+   <property name="geometry">
+    <rect>
+     <x>1680</x>
+     <y>50</y>
+     <width>221</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#exitB {
+    background-image: url(:/redc/lib/exit - Copy.png);
+    border: none;
+}
+
+#exitB:hover, QPushButton#exitB:focus {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#exitB:pressed {
+  box-shadow: none;
+  border: 1px solid #ccc; /* Add border to indicate button is pressed */
+  border-radius: 7px;
+  padding-top: 11px; /* Adjust padding to create &quot;pressed&quot; effect */
+  padding-bottom: 9px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Delete_btn">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>810</y>
+     <width>210</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>23</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Delete_btn{
+color: rgb(255, 255, 255);
+border-radius: 18px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #FF4136, stop: 1 #FF851B);
+border: 3px Solid rgb(175, 34, 15);
+}
+#Delete_btn:hover:pressed{
+background-color: rgb(255, 167, 43);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Submet </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="inputMessage">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>810</y>
+     <width>951</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 5px solid rgba(0,0,0,0);
+border-bottom-color: rgb(11, 55, 255);
+padding-bottom:10px;
+color:rgb(255, 255, 255);
+border-radius: 5px;
+background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #2cd9ff, stop: 1 #4209c5);
+animation: gradientAnimation 2s linear infinite;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Type message...                                                                           </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>381</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Day Month Year</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
